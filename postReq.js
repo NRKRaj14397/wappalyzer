@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // POST route to accept URL
-app.post('/url', async (req, res) => {
+app.post('/getdetails', async (req, res) => {
   const { url } = req.body;
   let rawurl = url;
 
