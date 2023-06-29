@@ -32,7 +32,7 @@ app.post('/url', async (req, res) => {
   const { url } = req.body;
   let rawurl = url;
 
-  console.log("Main url=",rawurl)
+  // console.log("Main url=",rawurl)
   try {
     const site = await wappalyzer.open(rawurl);
     const results = await site.analyze();
